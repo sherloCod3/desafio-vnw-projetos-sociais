@@ -1,10 +1,8 @@
 import type { Config } from "tailwindcss";
-import plugin from "tailwindcss/plugin";
-import animate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
-  content: ["./client/**/*.{ts,tsx}"],
+  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
     container: {
@@ -15,10 +13,6 @@ export default {
       },
     },
     extend: {
-      fontFamily: {
-        'source': ['"Source Sans 3"', '-apple-system', 'Roboto', 'Helvetica', 'sans-serif'],
-        'helvetica': ['Helvetica', '-apple-system', 'Roboto', 'sans-serif'],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -63,11 +57,6 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom colors from design
-        'brand-blue': '#205691',
-        'brand-coral': '#FD7267',
-        'brand-text-blue': '#122F97',
-        'brand-cyan': '#00AAFF',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -98,5 +87,5 @@ export default {
       },
     },
   },
-  plugins: [animate],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
