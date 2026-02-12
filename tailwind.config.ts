@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'source': ['"Source Sans 3"', '-apple-system', 'Roboto', 'Helvetica', 'sans-serif'],
+        'helvetica': ['Helvetica', '-apple-system', 'Roboto', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +61,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Custom colors from design
+        'brand-blue': '#205691',
+        'brand-coral': '#FD7267',
+        'brand-text-blue': '#122F97',
+        'brand-cyan': '#00AAFF',
       },
       borderRadius: {
         lg: "var(--radius)",
