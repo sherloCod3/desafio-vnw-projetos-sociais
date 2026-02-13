@@ -1,73 +1,146 @@
-# Welcome to your Lovable project
+# Plataforma de Conexão Social
 
-## Project info
+Aplicação web desenvolvida para conectar iniciativas sociais, voluntários e apoiadores, promovendo impacto positivo por meio de uma experiência digital moderna, acessível e responsiva.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+O projeto simula o desenvolvimento de uma solução real para uma organização que busca ampliar visibilidade, engajamento e alcance social através da tecnologia.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Visão Geral
 
-**Use Lovable**
+A plataforma tem como objetivos principais:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+* Dar visibilidade a projetos sociais
+* Apresentar informações de forma clara e acessível
+* Facilitar a conexão entre voluntários, organizações e apoiadores
+* Incentivar engajamento e transformação social
+* Transmitir confiança e profissionalismo por meio do design
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Stack Tecnológica
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* React.js
+* React Router DOM
+* SCSS (estrutura modular)
+* Google Fonts (Inter / Source Sans 3)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+O projeto não utiliza frameworks CSS ou bibliotecas de UI prontas, priorizando domínio de fundamentos e organização arquitetural.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Estrutura do Projeto
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```
+src/
+ ├── components/
+ │    ├── Header
+ │    ├── Footer
+ │    ├── CardProjeto
+ │    ├── CardVoluntario
+ │
+ ├── pages/
+ │    ├── Home
+ │    ├── Doacao
+ │    ├── Voluntariado
+ │    ├── Mentoria
+ │    ├── EventosEP
+ │    ├── Usuario
+ │
+ ├── styles/
+ │    ├── _variables.scss
+ │    ├── _mixins.scss
+ │    ├── global.scss
+ │
+ ├── routes.jsx
+ └── App.jsx
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Princípios aplicados
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+* Componentização reutilizável
+* Separação clara entre layout, páginas e estilos
+* Organização modular de SCSS
+* Uso de variáveis para cores, tipografia e espaçamentos
+* Estrutura preparada para evolução e manutenção
+
+---
+
+## Rotas Implementadas
+
+| Rota            | Descrição                                                |
+| --------------- | -------------------------------------------------------- |
+| `/`             | Página inicial com apresentação da plataforma e projetos |
+| `/Doacao`       | Página de doação                                         |
+| `/Voluntariado` | Projetos disponíveis para voluntariado                   |
+| `/Mentoria`     | Projetos com oportunidades de mentoria                   |
+| `/EventosEP`    | Eventos e palestras                                      |
+| `/Usuario`      | Perfil do usuário                                        |
+
+As rotas são organizadas em arquivo dedicado, mantendo clareza estrutural e responsabilidade isolada.
+
+---
+
+## Diretrizes de Design
+
+### Paleta
+
+* Azul: confiança e tecnologia
+* Laranja: impacto social e esperança
+* Branco: simplicidade e acessibilidade
+
+### Tipografia
+
+* Inter
+* Source Sans 3
+
+Foco em legibilidade, hierarquia visual consistente e contraste equilibrado.
+
+---
+
+## Responsividade
+
+A aplicação foi desenvolvida com abordagem responsiva utilizando:
+
+* Unidades relativas (`%`, `rem`, `vh`, `vw`)
+* `max-width` para controle de layout
+* Media queries para adaptação entre dispositivos
+
+Compatível com mobile, tablet e desktop.
+
+---
+
+## Restrições Técnicas Respeitadas
+
+* Sem uso de frameworks CSS (Bootstrap, Tailwind, etc.)
+* Sem bibliotecas de UI prontas
+* Sem plugins externos de layout
+
+A proposta prioriza domínio de CSS e organização estrutural.
+
+---
+
+## Competências Demonstradas
+
+* Organização e padronização de código
+* Componentização eficiente
+* Gerenciamento de rotas com React Router
+* Estilização profissional com SCSS
+* Estrutura escalável
+* Responsividade aplicada corretamente
+
+---
+
+## Como Executar
+
+```bash
+git clone <url-do-repositorio>
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Considerações Finais
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Este projeto foi desenvolvido com foco em qualidade técnica, organização e boas práticas de frontend moderno, simulando um cenário real de mercado e reforçando fundamentos essenciais para aplicações escaláveis.
