@@ -7,7 +7,7 @@ interface CardProjetoProps {
 
 const CardProjeto = ({ projeto }: CardProjetoProps) => {
   return (
-    <div className="flex flex-col items-center px-6 py-4 text-center">
+    <div className="flex h-full flex-col items-center px-6 py-4 text-center">
       <img
         src={projeto.imagem}
         alt={projeto.titulo}
@@ -18,7 +18,7 @@ const CardProjeto = ({ projeto }: CardProjetoProps) => {
         {projeto.titulo}
       </h3>
       <p className="mb-4 text-sm text-muted-foreground">{projeto.descricao}</p>
-      <Button className="bg-[#205691] text-white hover:bg-[#205691]/90">
+      <Button className="mt-auto bg-[#205691] text-white hover:bg-[#205691]/90">
         {projeto.botaoTexto}
       </Button>
     </div>
